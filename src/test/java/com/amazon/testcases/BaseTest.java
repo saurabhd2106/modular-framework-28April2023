@@ -39,7 +39,7 @@ public class BaseTest {
 
 	Properties configProperties;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void preSetup() throws Exception {
 
 		executionStartTime = DateTimeUtils.getCurrentDateAndTime();
@@ -56,7 +56,7 @@ public class BaseTest {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() throws Exception {
 
 		cmnDriver = new CommonDriver(configProperties.getProperty("browser"));
@@ -70,7 +70,7 @@ public class BaseTest {
 		screenshotControl = new ScreenshotControl(driver);
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void cleanup(ITestResult testResult) throws Exception {
 
 		if (testResult.getStatus() == ITestResult.SUCCESS) {
@@ -103,7 +103,7 @@ public class BaseTest {
 		cmnDriver.quitBrowser();
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void postCleanup() {
 
 		reportUtils.flushReport();

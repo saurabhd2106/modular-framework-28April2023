@@ -37,7 +37,7 @@ public class TestExcelSheet {
 		excelReader.closeWorkbook();
 	}
 
-	@Test
+	@Test(groups = "Sanity")
 	public void readTestData() throws Exception {
 		String currentWorkingDirectory = System.getProperty("user.dir");
 
