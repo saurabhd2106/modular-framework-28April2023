@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-28T11:41:07 UTC" name="Default suite" finished-at="2023-04-28T11:41:34 UTC" duration-ms="27864">
+    <groups>
+    </groups>
+    <test started-at="2023-04-28T11:41:07 UTC" name="Default test" finished-at="2023-04-28T11:41:34 UTC" duration-ms="27864">
+      <class name="com.amazon.testcases.SearchProductTest">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:07 UTC" name="preSetup" finished-at="2023-04-28T11:41:07 UTC" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:08 UTC" name="setup" finished-at="2023-04-28T11:41:14 UTC" duration-ms="5798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:14 UTC" name="VerifySearchProduct" data-provider="getSearchProductTestDataFromExcel" finished-at="2023-04-28T11:41:18 UTC" duration-ms="4066" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Apple Watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [APPLE WATCH 2021] but found [Apple Watch SE (2nd Gen) [GPS 44 mm] Smart Watch w/Starlight Aluminium Case & Starlight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display, Water Resistant
+549
+Limited time deal
+₹29,900 M.R.P:
+₹32,900 (9% off)
+Flat INR 2000 Off on HDFC BankCards
+FREE Delivery by Amazon]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [APPLE WATCH 2021] but found [Apple Watch SE (2nd Gen) [GPS 44 mm] Smart Watch w/Starlight Aluminium Case & Starlight Sport Band. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display, Water Resistant
+549
+Limited time deal
+₹29,900 M.R.P:
+₹32,900 (9% off)
+Flat INR 2000 Off on HDFC BankCards
+FREE Delivery by Amazon]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.amazon.testcases.SearchProductTest.VerifySearchProduct(SearchProductTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchProduct -->
+        <test-method is-config="true" signature="cleanup(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:18 UTC" name="cleanup" finished-at="2023-04-28T11:41:19 UTC" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySearchProduct status=FAILURE method=SearchProductTest.VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:19 UTC" name="setup" finished-at="2023-04-28T11:41:22 UTC" duration-ms="3743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:22 UTC" name="VerifySearchProduct" data-provider="getSearchProductTestDataFromExcel" finished-at="2023-04-28T11:41:26 UTC" duration-ms="3380" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Table]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Furniture]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [APPLE WATCH 2021] but found [Best seller
+Palazzo Study Table/Bed Table/Foldable and Portable Wooden/Writing Desk for Office/Home/School (Black)
+290
+₹399 M.R.P:
+₹799 (50% off)
+Get it by Tuesday, 2 May]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [APPLE WATCH 2021] but found [Best seller
+Palazzo Study Table/Bed Table/Foldable and Portable Wooden/Writing Desk for Office/Home/School (Black)
+290
+₹399 M.R.P:
+₹799 (50% off)
+Get it by Tuesday, 2 May]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.amazon.testcases.SearchProductTest.VerifySearchProduct(SearchProductTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchProduct -->
+        <test-method is-config="true" signature="cleanup(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:26 UTC" name="cleanup" finished-at="2023-04-28T11:41:26 UTC" duration-ms="580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySearchProduct status=FAILURE method=SearchProductTest.VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:26 UTC" name="setup" finished-at="2023-04-28T11:41:30 UTC" duration-ms="3816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:30 UTC" name="VerifySearchProduct" data-provider="getSearchProductTestDataFromExcel" finished-at="2023-04-28T11:41:33 UTC" duration-ms="3253" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amazon gift Card ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gift Cards]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [APPLE WATCH 2021] but found [Best seller
+Amazon Pay eGift Card
+178,016
+₹10-
+₹10,000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [APPLE WATCH 2021] but found [Best seller
+Amazon Pay eGift Card
+178,016
+₹10-
+₹10,000]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.amazon.testcases.SearchProductTest.VerifySearchProduct(SearchProductTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchProduct -->
+        <test-method is-config="true" signature="cleanup(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:33 UTC" name="cleanup" finished-at="2023-04-28T11:41:34 UTC" duration-ms="451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySearchProduct status=FAILURE method=SearchProductTest.VerifySearchProduct(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="postCleanup()[pri:0, instance:com.amazon.testcases.SearchProductTest@5bf0d49]" started-at="2023-04-28T11:41:34 UTC" name="postCleanup" finished-at="2023-04-28T11:41:34 UTC" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCleanup -->
+      </class> <!-- com.amazon.testcases.SearchProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
