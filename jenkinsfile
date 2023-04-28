@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        
+        
+        stage('MVN clean') {
+            steps {
+                powershell 'mvn clean'
+            }
+        }
+        
+        stage('MVN test') {
+            steps {
+                powershell 'mvn test'
+            }
+            
+            post {
+                always {
+                    junit '**/target/surefire-reports/junitreports/TEST-*.xml'
+                }
+            }
+        }
+    }
+}
